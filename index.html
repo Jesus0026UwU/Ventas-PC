@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Venta de PC y Más</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 class="titulo">PRO-TechZone</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="acerca.html">Acerca de</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio">
+    <h2>Bienvenido</h2>
+    <p>Descubre las mejores computadoras del mercado.</p>
+    <p>Que te pueden encantar probar y utilizar, lo mejor y lo ideal lo tienes aquí para ti.</p>
+  </section>
+
+  <section id="galeria">
+    <h2>Galería</h2>
+    <input type="text" id="buscador" placeholder="Buscar computadora..." />
+    <div id="galeria-contenedor" class="galeria-contenedor">
+      <div class="item" data-nombre="gaming">
+        <img src="imagenes/PC1.jpg" alt="PC Gaming" />
+        <h3>PC Gaming</h3>
+        <p>Procesador Ryzen 7, 16GB RAM, RTX 3060, 1TB SSD</p>
+        <button class="btn-agregar">Agregar al carrito</button>
+      </div>
+      <div class="item" data-nombre="oficina">
+        <img src="imagenes/PC2.jpg" alt="PC Oficina" />
+        <h3>PC de Oficina</h3>
+        <p>Procesador Intel i5, 8GB RAM, 512GB SSD</p>
+        <button class="btn-agregar">Agregar al carrito</button>
+      </div>
+      <div class="item" data-nombre="estudiante">
+        <img src="imagenes/PC3.jpg" alt="PC Estudiante" />
+        <h3>PC para Estudiantes</h3>
+        <p>Procesador Intel i3, 4GB RAM, 256GB SSD</p>
+        <button class="btn-agregar">Agregar al carrito</button>
+      </div>
+      <div class="item">
+        <img src="imagenes/PC4.jpg" alt="Computadora 4">
+        <h3>Mini PC para estudio</h3>
+        <p>Mini PC Intel NUC, SSD 512GB, 16GB RAM</p>
+        <button class="btn-agregar">Agregar al carrito</button>
+      </div>
+      <div class="item">
+        <img src="imagenes/PC5.jpg" alt="Computadora 5">
+        <h3>PC Gamer moderna</h3>
+        <p>PC Gamer Intel i9, RTX 4080, 64GB RAM</p>
+        <button class="btn-agregar">Agregar al carrito</button>
+      </div>
+      <div class="item">
+        <img src="imagenes/PC6.jpg" alt="Computadora 6">
+        <h3>Laptop Legion 5</h3>
+        <p>Laptop Lenovo Legion 5, Ryzen 7, RTX 3060</p>
+        <button class="btn-agregar">Agregar al carrito</button>
+      </div>
+      <div class="item">
+        <img src="imagenes/PC7.jpg" alt="Computadora 7">
+        <h3>PC Básica de trabajo</h3>
+        <p>All-in-One Dell, Intel i3, 8GB RAM</p>
+        <button class="btn-agregar">Agregar al carrito</button>
+      </div>
+      <div class="item">
+        <img src="imagenes/PC8.jpg" alt="Computadora 8">
+        <h3>Servidor Intel</h3>
+        <p>Servidor Intel Xeon, ECC RAM, 4TB HDD</p>
+        <button class="btn-agregar">Agregar al carrito</button>
+      </div>
+      <div class="item">
+        <img src="imagenes/PC9.jpg" alt="Computadora 9">
+        <h3>Macbook Futura</h3>
+        <p>MacBook Pro M1, 16GB RAM, 512GB SSD</p>
+        <button class="btn-agregar">Agregar al carrito</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carrito de compras -->
+  <div id="carrito" class="carrito">
+    <h3>Carrito de Compras</h3>
+    <ul id="lista-carrito"></ul>
+    <button id="vaciar-carrito"
+    class="boton-especial">Vaciar Carrito</button>
+  </div>
+  <button id="ver-carrito"
+  class="boton-especial">🛒 Ver Carrito</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

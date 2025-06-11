@@ -1,0 +1,91 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+/* Encabezado */
+header {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #00ffff;
+}
+
+.titulo {
+  font-size: 2.5rem;
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+}
+
+/* Menú de navegación */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #00ffff;
+  color: #000;
+}
+
+/* Contenido principal */
+main {
+  padding: 40px 0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #00ffff;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #00ffff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+p, ul li {
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+/* Lista personalizada */
+ul {
+  padding-left: 20px;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #00ffff;
+  font-size: 0.9rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-top: 40px;
+}

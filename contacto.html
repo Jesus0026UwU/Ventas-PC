@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto | PRO-TechZone</title>
+  <link rel="stylesheet" href="contacto_estilos.css" />
+</head>
+<body>
+  <header>
+    <h1 class="titulo">Contacto</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html#acerca">Acerca de</a></li>
+        <li><a href="index.html#galeria">Galería</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <form action="https://formspree.io/f/manoylrk" method="POST">
+      <label for="nombre">Nombre:</label><br/>
+      <input type="text" id="nombre" name="nombre" required><br/><br/>
+
+      <label for="telefono">Teléfono:</label><br/>
+      <input type="tel" id="telefono" name="telefono" placeholder="Ej: 55 1234 5678" required><br/><br/>
+
+      <label for="correo">Correo electrónico:</label><br/>
+      <input type="email" id="correo" name="correo" required><br/><br/>
+
+      <label for="producto">Producto de interés:</label><br/>
+      <select id="producto" name="producto" required>
+        <option value="">-- Selecciona una opción --</option>
+        <option value="pc_gamer">PC Gamer</option>
+        <option value="laptop">Laptop</option>
+        <option value="oficina">PC de Oficina</option>
+        <option value="estudio">Mini PC / Estudio</option>
+        <option value="servidores">Servidor</option>
+        <option value="otros">Otros</option>
+      </select><br/><br/>
+
+      <label for="mensaje">Mensaje:</label><br/>
+      <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribe tus dudas o comentarios..."></textarea><br/><br/>
+
+      <button type="submit">Enviar Mensaje</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

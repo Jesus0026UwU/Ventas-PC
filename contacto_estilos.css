@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(-45deg, #1e1e1e, #2e2e2e, #3e3e3e, #1e1e1e);
+    background-size: 400% 400%;
+    animation: fondoAnimado 15s ease infinite;
+    color: white;
+  }
+  
+  @keyframes fondoAnimado {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+  }
+  
+  header {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .titulo {
+    font-size: 2.5rem;
+    animation: deslizar 2s ease-in-out;
+  }
+  
+  @keyframes deslizar {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: #222;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  nav a:hover {
+    background: #444;
+    transform: scale(1.1);
+  }
+  
+  section {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  #buscador {
+    padding: 10px;
+    width: 60%;
+    max-width: 400px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+  }
+  
+  .galeria-contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .item {
+    background-color: #2a2a2a;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 220px;
+    transition: transform 0.3s;
+  }
+  
+  .item img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .item:hover {
+    transform: scale(1.05);
+  }
+  #acerca {
+    font-family: 'Poppins' , sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #e0e0e0;
+  }
+#contacto {
+    padding: 40px;
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  form {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #fff;
+    text-align: left;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #444;
+    background-color: #2a2a2a;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  form input:focus,
+  form textarea:focus {
+    border-color: #00bfff;
+    box-shadow: 0 0 8px #00bfff80;
+    outline: none;
+  }
+  
+  form button {
+    background: linear-gradient(to right, #00bfff, #1e90ff);
+    border: none;
+    padding: 12px 30px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  form button:hover {
+    background: linear-gradient(to right, #1e90ff, #00bfff);
+    transform: scale(1.05);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
